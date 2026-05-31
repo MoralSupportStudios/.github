@@ -11,7 +11,7 @@ the open — come play, break things, and tell us what you think.
 first-person ship adventure for 1–4 friends, online or over LAN. Vibe-coded
 prototype, in active development.
 
-▶ **[Play the latest build on itch.io](https://theschlote.itch.io/friend-slop)**
+▶ **[Play the latest build on itch.io](https://moral-support-studios.itch.io/friend-slop)**
 
 ## 💬 Get involved
 
