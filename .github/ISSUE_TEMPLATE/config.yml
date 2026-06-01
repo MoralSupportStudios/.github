@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🎮 Play the latest build
+    url: https://moral-support-studios.itch.io/space-game
+    about: Grab the newest build on itch.io before reporting — your bug may already be fixed.
+  - name: 🗺️ Roadmap & project board
+    url: https://github.com/orgs/MoralSupportStudios/projects
+    about: See what we're working on and what's planned next.
+  - name: ✉️ Email us
+    url: mailto:Support@MoralSupportStudios.com
+    about: For anything that doesn't fit a bug report or feature request.

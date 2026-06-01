@@ -1,0 +1,73 @@
+name: 🐛 Playtest bug
+description: Something broke, glitched, or behaved unexpectedly while playing.
+title: "[Bug]: "
+labels: ["bug", "playtest"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping us squash bugs! The more detail you give, the faster
+        we can reproduce and fix it. A short clip or screenshot is gold.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect to happen instead?
+      placeholder: "When I vented the airlock as host, the other player fell through the floor instead of getting sucked out."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: How can we make it happen again? Be as exact as you can.
+      placeholder: |
+        1. Host an online game with 2 players
+        2. Player 2 stands in the airlock
+        3. Host opens the outer door
+        4. ...
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build version
+      description: Shown in-game or on the itch.io download.
+      placeholder: "e.g. v0.4.2 / itch build from 2026-05-30"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: How were you playing?
+      options:
+        - Single-player
+        - Online multiplayer
+        - LAN multiplayer
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other (note it below)
+    validations:
+      required: true
+  - type: input
+    id: players
+    attributes:
+      label: How many players?
+      placeholder: "e.g. 3"
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots, clips, or logs
+      description: Drag-and-drop any images/videos here, or paste log output. Totally optional but super helpful.
+    validations:
+      required: false

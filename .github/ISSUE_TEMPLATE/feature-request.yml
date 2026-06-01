@@ -1,0 +1,43 @@
+name: 💡 Feature request
+description: Suggest an idea, mechanic, or improvement.
+title: "[Idea]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea to make the game better? We'd love to hear it. There are no
+        bad ideas here — just tell us what you're imagining.
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+      description: Describe the feature, mechanic, or change you'd like to see.
+      placeholder: "It'd be great if players could leave voice pings on the ship map so the crew can coordinate."
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does it solve?
+      description: What's frustrating or missing today that this would fix? (Optional but helps us prioritize.)
+      placeholder: "Right now there's no quick way to point teammates at a hull breach without typing it out."
+    validations:
+      required: false
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Any other ways you thought about solving this?
+    validations:
+      required: false
+  - type: dropdown
+    id: importance
+    attributes:
+      label: How much do you want this?
+      options:
+        - Nice to have
+        - Would really improve the game
+        - I'd play way more if this existed
+    validations:
+      required: false
