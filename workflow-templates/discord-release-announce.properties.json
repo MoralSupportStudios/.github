@@ -1,0 +1,7 @@
+{
+  "name": "Announce release to Discord",
+  "description": "Posts to a Discord channel via webhook whenever a GitHub release is published. Requires a DISCORD_WEBHOOK secret.",
+  "iconName": "octicon megaphone",
+  "categories": ["Automation", "Community"],
+  "filePatterns": []
+}

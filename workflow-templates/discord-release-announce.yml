@@ -1,0 +1,33 @@
+name: Announce release to Discord
+
+# Posts a message to a Discord channel whenever a GitHub release is published.
+#
+# Setup:
+#  1. In Discord: Server Settings -> Integrations -> Webhooks -> New Webhook,
+#     pick the #announcements channel, and Copy Webhook URL.
+#  2. In the repo (or org): Settings -> Secrets and variables -> Actions ->
+#     New repository secret named DISCORD_WEBHOOK with that URL.
+#  3. Cut a release and the bot will post automatically.
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post to Discord
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK" ]; then
+            echo "DISCORD_WEBHOOK secret is not set; skipping."
+            exit 0
+          fi
+          content=$(printf '🚀 **%s** is out!\n\n%s\n\n%s' \
+            "${{ github.event.release.name || github.event.release.tag_name }}" \
+            "Grab it on itch.io: https://moral-support-studios.itch.io/space-game" \
+            "Release notes: ${{ github.event.release.html_url }}")
+          jq -nc --arg c "$content" '{content: $c}' \
+            | curl -sf -H "Content-Type: application/json" -d @- "$DISCORD_WEBHOOK"
