@@ -9,7 +9,7 @@
 [![Official Website](https://img.shields.io/badge/Web-moralsupportstudios.github.io-6366f1?logo=googlechrome&logoColor=white)](https://moralsupportstudios.github.io)
 [![Contact Email](https://img.shields.io/badge/Email-Support%40MoralSupportStudios.com-10b981?logo=maildotru&logoColor=white)](mailto:Support@MoralSupportStudios.com)
 
-An independent game studio crafting tactile co-op adventures, chaotic dungeon comedies, and games meant to be played together. Come playtest, break things, and help shape our worlds.
+An independent game studio crafting tactile co-op adventures, chaotic dungeon comedies, and games meant to be played together. We build in the open — come playtest, break things, and help shape our worlds.
 
 </div>
 
@@ -45,7 +45,7 @@ A first-person ship-and-planet salvage adventure for 1–4 friends. Pilot multi-
 
 ## 💬 Get Involved & Playtesting
 
-We test early and rely on player feedback to make every game better:
+We build in the open and rely on players to help us make every game better:
 
 - 🎮 **itch.io Community:** Follow our updates, devlogs, and test releases at [moral-support-studios.itch.io](https://moral-support-studios.itch.io)
 - 🗺️ **Studio Roadmap:** Check in on project milestones on our [GitHub Projects Board](https://github.com/orgs/MoralSupportStudios/projects)
